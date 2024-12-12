@@ -79,11 +79,11 @@ public class MyString {
        
        if (str.isEmpty()) {return str;}
         String spacedString = "";
-    for (int i = 0; i <= str.length() - 1; i++) {
+    for (int i = 0; i < str.length() - 1; i++) {
         char spacedLetter = str.charAt(i);
         spacedString += spacedLetter + " ";
     }
-    //spacedString += str.charAt(str.length() - 1);
+    spacedString += str.charAt(str.length() - 1);
      
 
 
