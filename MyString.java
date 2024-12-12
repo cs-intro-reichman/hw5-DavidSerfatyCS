@@ -5,7 +5,7 @@
  */
 public class MyString {
     public static void main(String args[]) {
-        System.out.println(spacedString(""));
+        System.out.println(spacedString("space"));
         System.out.println(subsetOf("desk", "desjzkkgau"));
         System.out.println(remove("paracaidas", "caidas"));
         System.out.println(randomStringOfLetters(8));
@@ -83,7 +83,7 @@ public class MyString {
         char spacedLetter = str.charAt(i);
         spacedString += spacedLetter + " ";
     }
-    spacedString += str.charAt(str.length() - 1);
+    //spacedString += str.charAt(str.length() - 1);
      
 
 
