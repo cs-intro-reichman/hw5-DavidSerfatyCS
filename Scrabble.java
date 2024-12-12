@@ -130,11 +130,11 @@ public class Scrabble {
 
 					else 
 					{ 
-						System.out.println("The word is not in your current hand, try again. ");
+						System.out.println("Invalid word. Try again.");
 					}
 				}
 				else 
-				{ 	System.out.println("The word " + input + " doesnt exist."); }
+				{ 	System.out.println("Invalid word. Try again."); }
 			}
 			else if (input.contains(".")) break;
 

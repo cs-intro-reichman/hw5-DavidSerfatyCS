@@ -77,7 +77,7 @@ public class MyString {
     public static String spacedString(String str) {
        
         String spacedString = "";
-    for (int i = 0; i < str.length() - 1; i++) {
+    for (int i = 0; i <= str.length(); i++) {
         char spacedLetter = str.charAt(i);
         spacedString += spacedLetter + " ";
     }
