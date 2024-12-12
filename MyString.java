@@ -5,10 +5,11 @@
  */
 public class MyString {
     public static void main(String args[]) {
+        System.out.println(spacedString(""));
         System.out.println(subsetOf("desk", "desjzkkgau"));
         System.out.println(remove("paracaidas", "caidas"));
         System.out.println(randomStringOfLetters(8));
-        System.out.println(spacedString("Prueba"));
+        
         String hello = "hello";
         System.out.println(countChar(hello, 'h'));
         System.out.println(countChar(hello, 'l'));
@@ -76,8 +77,9 @@ public class MyString {
      */
     public static String spacedString(String str) {
        
+       if (str.isEmpty()) {return str;}
         String spacedString = "";
-    for (int i = 0; i <= str.length(); i++) {
+    for (int i = 0; i <= str.length() - 1; i++) {
         char spacedLetter = str.charAt(i);
         spacedString += spacedLetter + " ";
     }

@@ -77,8 +77,8 @@ public class Scrabble {
 		}
 		
 		letterPoints *= word.length();
-		if (word.length() == HAND_SIZE) { letterPoints += 50; }
-		if (word.contains("runi")) 		{ letterPoints += 1000; }
+		if (word.length() == HAND_SIZE) 		{ letterPoints += 50; }
+		if (MyString.subsetOf("runi", word)) 	{ letterPoints += 1000; }
 
 		return letterPoints;
 	}
