@@ -125,7 +125,7 @@ public class Scrabble {
 						int wordScore = wordScore(input);
 						score += wordScore;
 						System.out.println(	input + " earned " + wordScore + " points. " +
-											"Score: " + score + " points");
+											"Score: " + score + " points ");
 					}
 
 					else 
